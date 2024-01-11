@@ -1,0 +1,362 @@
+<html>
+<head>
+    <title>cv</title>
+    <style>
+        .cv-edit{
+            float: left;
+            width: 40%;
+            height: 1200px;
+            background-color: darkgray;
+            
+        }
+
+        .metin-icerikleri{
+          
+            float: left;
+            width: 50%;
+            height: 1200px;
+            background-color: rgb(140, 140, 140);
+        }
+        .gorunus{
+            
+            float: left;
+            width: 50%;
+            height: 1200px;
+            background-color: rgb(109, 109, 109);
+        }
+
+
+
+        /* --------------------------------- */
+        .cv {
+            float: left;
+            width: 60%;
+            height: 1200px;
+            background-color: chocolate;
+            display: flex;
+        }
+
+        .solKolon {
+            width: 300px;
+            height: 100%;
+            background-color: bisque;
+            margin-left: 30px;
+        }
+
+        .sagKolon {
+            width: 600px;
+            height: 100%;
+        }
+
+        .isimKutusu {
+            width: 100%;
+            background-color: #38240b;
+            height: 200px;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+            .isimKutusu .isim {
+                font-size: 50px;
+            }
+
+            .isimKutusu .unvan {
+                font-size: 30px;
+            }
+
+            .isimKutusu .cizgi {
+                border-bottom: white 3px solid;
+                width: 100px;
+                margin: auto;
+            }
+
+
+        .foto {
+            width: 200px;
+            border-radius: 100px;
+            margin: 50px;
+        }
+
+        .solKolon .kutu {
+            width: 275px;
+            height: 250px;
+            margin: 10px;
+        }
+
+        .sagKolon .kutu {
+            width: 500px;
+            height: 400px;
+            margin: 10px;
+        }
+
+        .kutu .baslik {
+            font-size: 25px;
+            border-bottom: black 3px solid;
+        }
+
+        .satir {
+            width: 100%;
+            height: 40px;
+            margin: 5px;
+        }
+
+            .satir div {
+                display: inline-block;
+                float: left;
+            }
+
+            .satir .ikon img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .satir .yazi {
+                padding: 5px;
+            }
+    </style>
+
+</head>
+<body>
+    <div class="cv-edit">
+         <div class="metin-icerikleri">
+                <h2>Metin İçeriklerihr  <hr></h2>
+
+
+                <div class="icerik-1">
+                <h3>İsim Kutusu <hr></h3>
+                    <div class="alan">
+                        <label for=""> Ad Soyad</label>
+                        <input type="text" id="ad-soyad" oninput="updateLabel(this.value)" >
+    
+                    </div>
+    
+                    <div class="alan">
+                        <label for=""> Alan</label>
+                        <input type="text" id="alan-ad" >
+                    </div>
+
+                </div>
+                <div class="icerik2">
+                    <h3>İletişim Bilgileri <hr></h3>
+                    <div class="alan">
+                        <label for=""> Telefon:</label>
+                        <input type="text" id="telefon-no" >
+                    </div>
+
+                    <div class="alan">
+                        <label for=""> Mail:</label>
+                        <input type="text" id="mail" >
+                    </div>
+
+                    <div class="alan">
+                        <label for=""> Web:</label>
+                        <input type="text" id="web-site" >
+                    </div>
+
+                    <div class="alan">
+                        <label for=""> Adres: </label>
+                        <br>
+                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                    </div>
+
+                </div>
+                <div class="icerik3">   
+                    <h3>Eğitim Bilgileri <hr></h3>
+                    
+                    <div class="alan">
+                        <label for=""> Açıklama: </label>
+                        <br>
+                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                    </div>
+                    <div class="alan">
+                        <label for=""> Okul Sayısı </label>
+                        <select name="okul-say" id="okul-sayisi">
+                            <option value="0">seçiniz</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="icerik4">   
+                    <h3>Yetenekler <hr></h3>
+                    
+                    <div class="alan">
+                        <label for=""> Açıklama: </label>
+                        <br>
+                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                    </div>
+                    <div class="alan">
+                        <label for=""> Yetenek Sayısı </label>
+                        <select name="okul-say" id="okul-sayisi">
+                            <option value="0">seçiniz</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="icerik5">
+                    <h3>Hakkımda <hr></h3>    
+                    <div class="alan">
+                        <label for=""> Açıklama: </label>
+                        <br>
+                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                    </div>  
+                </div>
+                <div class="icerik6">
+                    <h3>İş Deneyimi <hr></h3>    
+                    <div class="alan">
+                        <label for=""> Açıklama: </label>
+                        <br>
+                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                    </div>  
+                </div>
+
+         </div>
+        <div class="gorunus">
+                <h2>Gorunuş <hr> </h2>
+           <div class="icerik7">
+            <h3>Renkler <hr></h3>   
+            <div class="alan">
+                <label for="favcolor">Arka Plan Rengi:</label>
+                <input type="color" id="arkaplan-rengi" name="arkaplan" value="#ff0000">
+            </div>  
+            <div class="alan">
+                <label for="favcolor">Sol Kolon Rengi:</label>
+                <input type="color" id="solKolon-rengi" name="solkolon" value="#ff0000">
+            </div>  
+            <div class="alan">
+                <label for="favcolor">İsim Kutusu Rengi:</label>
+                <input type="color" id="isimKutusu-rengi" name="isimkutusu" value="#ff0000">
+            </div>  
+            <div class="alan">
+                <label for="favcolor">İsim Kutusu Yazı Rengi:</label>
+                <input type="color" id="isimKutusuYazi-rengi" name="isimkutusu-yazı" value="#ff0000">
+            </div>  
+           </div>
+           <div class="icerik8">
+            <h3>Yazı Tipi<hr></h3>   
+            <div class="alan">
+                <label for=""> Yazı Tipi: </label>
+                <select name="okul-say" id="okul-sayisi">
+                    <option value="0">seçiniz</option>
+                    <option value="Times-New-Roman">Times New Roman</option>
+                    <option value="Courier-New">Courier New</option>
+                    <option value="Lucida-Handwriting">Lucida Handwriting </option>
+                </select>
+            </div>
+           </div>
+                
+           <div class="icerik9">
+            <h3>Fotoğraf<hr></h3>  
+            <div class="alan">
+                <label for="">Fotoğraf Çerçevesi Şekli: </label>
+                <select name="okul-say" id="okul-sayisi">
+                    <option value="0">seçiniz</option>
+                    <option value="koseli">Köşeli</option>
+                    <option value="oval">Oval</option>
+                    <option value="yuvarlak"> Yuvarlak </option>
+                </select>
+            </div>
+           </div>
+
+           <div class="icerik10">
+            <h3>Başlık Alt Çizgiler<hr></h3>  
+            <div class="alan">
+                <label for="favcolor">Çizgi Rengi:</label>
+                <input type="color" id="arkaplan-rengi" name="arkaplan" value="#ff0000">
+            </div>
+            <br>
+            <div class="alan">
+                <label for="">Çizgi Şekli: </label>
+                <select name="cizgiSekli" id="cizgi-sekli">
+                    <option value="0">seçiniz</option>
+                    <option value="noktali">Noktalı</option>
+                    <option value="cizgil">Çizgili</option>
+                    <option value="duz"> Düz</option>
+                </select>
+            </div>
+
+           </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="cv">
+        <div class="solKolon">
+            <img src="foto.jpg" class="foto" />
+            <div class="kutu">
+                <div class="baslik"> CONTACT </div>
+                <div class="icerik">
+                    <div class="satir">
+                        <div class="ikon"> <img src="phone.png" /></div>
+                        <div class="yazi"> +90 555 555 55 55</div>
+                    </div>
+                    <div class="satir">
+                        <div class="ikon"> <img src="mail.png" /></div>
+                        <div class="yazi"> asdasd@gmail.com</div>
+                    </div>
+                    <div class="satir">
+                        <div class="ikon"> <img src="adress.png" /></div>
+                        <div class="yazi"> İstanbul</div>
+                    </div>
+                    <div class="satir">
+                        <div class="ikon"> <img src="phone.png" /></div>
+                        <div class="yazi"> +90 555 555 55 55</div>
+                    </div>
+                </div>
+            </div>
+            <div class="kutu">
+                <div class="baslik"> EDUCATION </div>
+                <div class="icerik">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+            <div class="kutu">
+                <div class="baslik"> SKILLS </div>
+                <div class="icerik">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sagKolon">
+            <div class="isimKutusu">
+                <div id="isim"> <label for="ad-soyad" id="outputLabel"></label>ASDASDA </div>
+                <div class="cizgi"></div>
+                <div class="unvan"> SOFTWARE DEVELOPER</div>
+            </div>
+            <div class="kutu">
+                <div class="baslik">PROFILE</div>
+                <div class="icerik">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
+            <div class="kutu">
+                <div class="baslik">WORK EXPERIENCE</div>
+                <div class="icerik">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <ul>
+                        <li>industry</li>
+                        <li>industry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+     function updateLabel(value) {
+      // Input değerini al ve label'a atar
+      document.getElementById('outputLabel').textContent = value;
+    }
+    </script>
+</body>
+</html>
