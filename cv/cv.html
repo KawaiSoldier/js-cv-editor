@@ -7,152 +7,164 @@
 <body>
     <div class="cv-edit">
          <div class="metin-icerikleri">
-                <h2>Metin İçeriklerihr  <hr></h2>
+                <h2 style="text-align: center;">Metin İçerikleri<hr></h2>
 
 
                 <div class="icerik-1">
-                <h3>İsim Kutusu <hr></h3>
+                <h3><u>İsim Kutusu</u></h3>
                     <div class="alan">
                         <label for=""> Ad Soyad</label>
-                        <input type="text" id="ad-soyad" oninput="updateLabel(this.value)" >
+                        <input type="text" id="input-Text1" >
     
                     </div>
     
                     <div class="alan">
                         <label for=""> Alan</label>
-                        <input type="text" id="alan-ad" >
+                        <input type="text" id="input-Text2" >
                     </div>
 
                 </div>
                 <div class="icerik2">
-                    <h3>İletişim Bilgileri <hr></h3>
+                     <h3><u>İletişim Bilgileri </u></h3>
                     <div class="alan">
                         <label for=""> Telefon:</label>
-                        <input type="text" id="telefon-no" >
+                        <input type="text" id="input-Text3">
                     </div>
 
                     <div class="alan">
                         <label for=""> Mail:</label>
-                        <input type="text" id="mail" >
+                        <input type="text" id="input-Text4">
                     </div>
 
                     <div class="alan">
                         <label for=""> Web:</label>
-                        <input type="text" id="web-site" >
+                        <input type="text" id="input-Text5">
                     </div>
 
                     <div class="alan">
                         <label for=""> Adres: </label>
                         <br>
-                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                        <textarea name="" id="input-Text6" cols="10" rows="5"></textarea>
                     </div>
 
                 </div>
                 <div class="icerik3">   
-                    <h3>Eğitim Bilgileri <hr></h3>
+                    <h3><u>Eğitim Bilgileri</u></h3>
                     
                     <div class="alan">
                         <label for=""> Açıklama: </label>
                         <br>
-                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                        <textarea name="" id="input-Text7" cols="10" rows="5"></textarea>
                     </div>
+
                     <div class="alan">
-                        <label for=""> Okul Sayısı </label>
-                        <select name="okul-say" id="okul-sayisi">
-                            <option value="0">seçiniz</option>
+                        <label for="quantity1">okul Sayısı: </label>
+                        <select id="quantity1" onchange="createInputFields('inputFieldsContainer1')">
+                            <option value="0">Seçiniz</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
+                          
                         </select>
+                    
+                        <div id="inputFieldsContainer1" class="inputFieldsContainer"></div>
+                             
                     </div>
                 </div>
 
                 <div class="icerik4">   
-                    <h3>Yetenekler <hr></h3>
+                    <h3><u>Yetenekler </u></h3>
                     
                     <div class="alan">
                         <label for=""> Açıklama: </label>
                         <br>
-                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                        <textarea name=""  id="input-Text8" cols="10" rows="5"></textarea>
                     </div>
                     <div class="alan">
-                        <label for=""> Yetenek Sayısı </label>
-                        <select name="okul-say" id="okul-sayisi">
-                            <option value="0">seçiniz</option>
+                        <label for="quantity2">Yetenek Sayısı: </label>
+                        <select id="quantity2" onchange="createInputFields('inputFieldsContainer2')">
+                            <option value="0">Select</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
+                         
                         </select>
+                    
+                        <div id="inputFieldsContainer2" class="inputFieldsContainer"></div>
                     </div>
                 </div>
 
                 <div class="icerik5">
-                    <h3>Hakkımda <hr></h3>    
+                    <h3><u>Hakkımda</u></h3>    
                     <div class="alan">
                         <label for=""> Açıklama: </label>
                         <br>
-                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                        <textarea name="" id="input-Text9" cols="10" rows="5"></textarea>
                     </div>  
                 </div>
                 <div class="icerik6">
-                    <h3>İş Deneyimi <hr></h3>    
+                    <h3><u>İş Deneyimi</u></h3>    
                     <div class="alan">
                         <label for=""> Açıklama: </label>
                         <br>
-                        <textarea name="" id="" cols="10" rows="5"></textarea>
+                        <textarea name="" id="input-Text10" cols="10" rows="5"></textarea>
                     </div>  
                 </div>
 
          </div>
         <div class="gorunus">
-                <h2>Gorunuş <hr> </h2>
-           <div class="icerik7">
-            <h3>Renkler <hr></h3>   
-            <div class="alan">
-                <label for="favcolor">Arka Plan Rengi:</label>
-                <input type="color" id="arkaplan-rengi" name="arkaplan" value="#ff0000">
-            </div>  
-            <div class="alan">
-                <label for="favcolor">Sol Kolon Rengi:</label>
-                <input type="color" id="solKolon-rengi" name="solkolon" value="#ff0000">
-            </div>  
-            <div class="alan">
-                <label for="favcolor">İsim Kutusu Rengi:</label>
-                <input type="color" id="isimKutusu-rengi" name="isimkutusu" value="#ff0000">
-            </div>  
-            <div class="alan">
-                <label for="favcolor">İsim Kutusu Yazı Rengi:</label>
-                <input type="color" id="isimKutusuYazi-rengi" name="isimkutusu-yazı" value="#ff0000">
-            </div>  
-           </div>
+                <h2 style="text-align: center;">Görünüş<hr></h2>
+                <div class="icerik7">
+                    <h3><u>Renkler</u></h3>   
+                    <div class="alan">
+                        <label for="arkaplan-rengi">Arka Plan Rengi:</label>
+                        <input type="color" id="arkaplan-rengi" name="arkaplan" value="#ff0000">
+                    </div>  
+                    <div class="alan">
+                        <label for="solKolon-rengi">Sol Kolon Rengi:</label>
+                        <input type="color" id="solKolon-rengi" name="solkolon" value="#ff0000">
+                    </div>  
+                    <div class="alan">
+                        <label for="isimKutusu-rengi">İsim Kutusu Rengi:</label>
+                        <input type="color" id="isimKutusu-rengi" name="isimkutusu" value="#ff0000">
+                    </div>  
+                    <div class="alan">
+                       <label for="isimKutusuYaziRengi">İsim Kutusu Yazı Rengi:</label>  <!--  yapamadım -->
+                        <input type="color" id="isimKutusuYaziRengi" name="isimkutusuyazi" value="#ff0000">
+                    </div>  
+                    <div class="alan">
+                        <label for="cizgi-rengi">Çizgi Rengi:</label>
+                        <input type="color" id="cizgi-rengi" name="cizgirengi" value="#ff0000">
+                    </div>  
+                </div>
            <div class="icerik8">
-            <h3>Yazı Tipi<hr></h3>   
+            <h3><u>Yazı Tipi</u></h3>   
             <div class="alan">
-                <label for=""> Yazı Tipi: </label>
-                <select name="okul-say" id="okul-sayisi">
-                    <option value="0">seçiniz</option>
-                    <option value="Times-New-Roman">Times New Roman</option>
-                    <option value="Courier-New">Courier New</option>
-                    <option value="Lucida-Handwriting">Lucida Handwriting </option>
+                <label for="fontSelector">Font Seçiniz:</label>
+                <select id="fontSelector" onchange="changeAllFonts()">
+                    <option value="0">Seçiniz</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Lucida Handwriting ">Lucida Handwriting </option>
                 </select>
             </div>
            </div>
                 
            <div class="icerik9">
-            <h3>Fotoğraf<hr></h3>  
+            <h3><u>Fotoğraf</u></h3>  
             <div class="alan">
                 <label for="">Fotoğraf Çerçevesi Şekli: </label>
-                <select name="okul-say" id="okul-sayisi">
+                <select id="shapeSelector" onchange="changeFrameShape()">
                     <option value="0">seçiniz</option>
-                    <option value="koseli">Köşeli</option>
-                    <option value="oval">Oval</option>
-                    <option value="yuvarlak"> Yuvarlak </option>
+                    <option value="square">Köşeli</option>
+                    <option value="circle">Oval</option>
+                    <option value="rounded"> Yuvarlak </option>
                 </select>
             </div>
            </div>
 
            <div class="icerik10">
-            <h3>Başlık Alt Çizgiler<hr></h3>  
+            <h3><u>Alt Çizgiler</u></h3>  
             <div class="alan">
                 <label for="favcolor">Çizgi Rengi:</label>
                 <input type="color" id="arkaplan-rengi" name="arkaplan" value="#ff0000">
@@ -169,76 +181,78 @@
             </div>
 
            </div>
-
-
-
         </div>
 
     </div>
 
     <div class="cv">
         <div class="solKolon">
-            <img src="foto.jpg" class="foto" />
+            <div id="frameContainer">
+                <img id="photoFrame" src="foto.jpg" alt="Photo">
+            </div>
             <div class="kutu">
                 <div class="baslik"> CONTACT </div>
                 <div class="icerik">
                     <div class="satir">
                         <div class="ikon"> <img src="phone.png" /></div>
-                        <div class="yazi"> +90 555 555 55 55</div>
+                        <div class="yazi"> <p id="text-output5"></p></div>
                     </div>
+                    <br>
                     <div class="satir">
                         <div class="ikon"> <img src="mail.png" /></div>
-                        <div class="yazi"> asdasd@gmail.com</div>
+                        <div class="yazi"> <p id="text-output4"></p></div>
                     </div>
+                    <br>
                     <div class="satir">
                         <div class="ikon"> <img src="adress.png" /></div>
-                        <div class="yazi"> İstanbul</div>
+                        <div class="yazi"><p id="text-output6"></p></div>
                     </div>
+                    <br>
                     <div class="satir">
-                        <div class="ikon"> <img src="phone.png" /></div>
-                        <div class="yazi"> +90 555 555 55 55</div>
+                        <div class="ikon"> <img src="web.png" /></div>
+                        <div class="yazi"> <p id="text-output3"></p></div>
                     </div>
-                </div>
-            </div>
+                   
+                </div><br>
+            </div><br>
+            <br>
             <div class="kutu">
                 <div class="baslik"> EDUCATION </div>
                 <div class="icerik">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p id="text-output7"></p>
+                
+                    <ul id="valuesList1"></ul>
+                    
                 </div>
             </div>
             <div class="kutu">
                 <div class="baslik"> SKILLS </div>
                 <div class="icerik">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p id="text-output8" >asdasd</p>
+                    <ul id="valuesList2"></ul>
                 </div>
             </div>
         </div>
         <div class="sagKolon">
             <div class="isimKutusu">
-                <div id="isim"> <label for="ad-soyad" id="outputLabel"></label></div>
+                <div id="resultContainer1" ><p style="font-size: 30px;" class="resultText" id="text-output1"></p> </div>
                 <div class="cizgi"></div>
-                <div class="unvan"> SOFTWARE DEVELOPER</div>
+                <div class="unvan"> <p style="font-size: 25px;"id="text-output2" ></p></div>
             </div>
             <div class="kutu">
                 <div class="baslik">PROFILE</div>
                 <div class="icerik">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                   <p id="text-output9"></p>
                 </div>
             </div>
             <div class="kutu">
                 <div class="baslik">WORK EXPERIENCE</div>
                 <div class="icerik">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <ul>
-                        <li>industry</li>
-                        <li>industry</li>
-                    </ul>
+                  <p id="text-output10"></p>
                 </div>
             </div>
         </div>
     </div>
-  
+    <script src="script.js"></script>
 </body>
 </html>
