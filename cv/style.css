@@ -1,3 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+.kutu .icerik {
+    overflow: hidden;
+    max-height: 100%;
+     word-wrap: break-word;
+     max-width: 100%;
+}
+
+li{
+
+    list-style-type: none
+
+}
+
+label {
+    color: black;
+    margin-right: 10px;
+    margin-bottom: 5px;
+   
+}
+input {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+}
 
         .cv-edit{
             float: left;
@@ -21,7 +53,13 @@
             height: 1200px;
             background-color: rgb(109, 109, 109);
         }
-
+        
+        #inputFieldsContainer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            width: 100px
+        }
 
 
         /* --------------------------------- */
@@ -54,6 +92,12 @@
             padding-top: 50px;
         }
 
+        .isimKutusu label{
+
+            font-size: 50px;
+            
+        }
+
             .isimKutusu .isim {
                 font-size: 50px;
             }
@@ -68,12 +112,18 @@
                 margin: auto;
             }
 
-
-        .foto {
-            width: 200px;
-            border-radius: 100px;
-            margin: 50px;
-        }
+            #frameContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 250px;
+                height: 250px;
+                border: 2px solid #333;
+                overflow: hidden;
+                position: relative;
+                margin: 20px;
+                border-radius: 100px;
+            }
 
         .solKolon .kutu {
             width: 275px;
